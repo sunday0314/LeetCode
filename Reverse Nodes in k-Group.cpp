@@ -13,12 +13,12 @@ ListNode *reverseKGroup(ListNode *head, int k) {
 		return head;
 	pNode = head;
 
-	ListNode* pGroupHead = NULL;//Ã¿×é¿ªÊ¼Ê±µÄÍ·½Úµã,½áÊøÊ±µÄÎ²½Úµã
-	ListNode* pGroupTail = NULL;//ÉÏÒ»×éµÄÎ²½Úµã
+	ListNode* pGroupHead = NULL;//æ¯ç»„å¼€å§‹æ—¶çš„å¤´èŠ‚ç‚¹,ç»“æŸæ—¶çš„å°¾èŠ‚ç‚¹
+	ListNode* pGroupTail = NULL;//ä¸Šä¸€ç»„çš„å°¾èŠ‚ç‚¹
 	while(pNode && nCount >= k)
 	{
 		pGroupHead = pNode;
-		ListNode* pLast = NULL; //ÉÏÒ»¸ö½Úµã
+		ListNode* pLast = NULL; //ä¸Šä¸€ä¸ªèŠ‚ç‚¹
 		ListNode* pTmp = NULL;
 		for (int i = 0; i < k; i++)
 		{
